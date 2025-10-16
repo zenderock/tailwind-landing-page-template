@@ -15,8 +15,24 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
+                href="/blog"
+                className="btn-sm shadow-none text-gray-800  hover:bg-gray-50 hover:text-purple-600"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="https://app.servel.ink"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                className="btn-sm shadow-none text-gray-800  hover:bg-gray-50 hover:text-purple-600"
+              >
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://app.servel.ink"
+                className="btn-sm bg-purple-600 font-bold text-white shadow-sm hover:bg-purple-700"
               >
                 Login
               </Link>

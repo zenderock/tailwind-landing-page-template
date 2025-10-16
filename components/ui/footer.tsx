@@ -26,7 +26,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/features"
                 >
                   Features
                 </Link>
@@ -34,7 +34,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/integrations"
                 >
                   Integrations
                 </Link>
@@ -42,27 +42,12 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/pricing"
                 >
-                  Pricing & Plans
+                  Pricing
                 </Link>
               </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Changelog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Our method
-                </Link>
-              </li>
+
             </ul>
           </div>
 
@@ -73,7 +58,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/about"
                 >
                   About us
                 </Link>
@@ -81,15 +66,15 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/contact"
                 >
-                  Diversity & Inclusion
+                  Contact
                 </Link>
               </li>
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/blog"
                 >
                   Blog
                 </Link>
@@ -97,19 +82,12 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/careers"
                 >
                   Careers
                 </Link>
               </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Financial statements
-                </Link>
-              </li>
+
             </ul>
           </div>
 
@@ -117,18 +95,11 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-medium">Resources</h3>
             <ul className="space-y-2 text-sm">
+
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Community
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/terms"
                 >
                   Terms of service
                 </Link>
@@ -136,9 +107,17 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/privacy"
                 >
-                  Report a vulnerability
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 transition hover:text-gray-900"
+                  href="/security"
+                >
+                  Security
                 </Link>
               </li>
             </ul>
