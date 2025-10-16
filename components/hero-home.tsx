@@ -1,11 +1,11 @@
 import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
+import Avatar01 from "@/public/images/logo-1.png";
+import Avatar02 from "@/public/images/4375050_logo_python_icon.png";
+import Avatar03 from "@/public/images/9118014_django_fill_icon.png";
+import Avatar04 from "@/public/images/9035101_logo_nodejs_icon.png";
+import Avatar05 from "@/public/images/FastAPI.png";
+import Avatar06 from "@/public/images/Go.png";
 
 export default function HeroHome() {
   return (
@@ -22,42 +22,42 @@ export default function HeroHome() {
             >
               <div className="-mx-0.5 flex justify-center -space-x-3">
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 bg-white"
                   src={Avatar01}
                   width={32}
                   height={32}
                   alt="Avatar 01"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 bg-white"
                   src={Avatar02}
                   width={32}
                   height={32}
                   alt="Avatar 01"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 bg-white"
                   src={Avatar03}
                   width={32}
                   height={32}
                   alt="Avatar 02"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 bg-white"
                   src={Avatar04}
                   width={32}
                   height={32}
                   alt="Avatar 03"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 bg-green-100"
                   src={Avatar05}
                   width={32}
                   height={32}
                   alt="Avatar 04"
                 />
                 <Image
-                  className="box-content rounded-full border-2 border-gray-50"
+                  className="box-content rounded-full border-2 border-gray-50 bg-cyan-100"
                   src={Avatar06}
                   width={32}
                   height={32}
