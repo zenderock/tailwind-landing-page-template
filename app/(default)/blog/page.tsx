@@ -26,7 +26,7 @@ export default function Blog() {
                         </div>
                         <div className="p-6">
                             <div className="flex items-center text-sm text-gray-500 mb-2">
-                                <span>December 15, 2024</span>
+                                <span>September 15, 2025</span>
                                 <span className="mx-2">•</span>
                                 <span>8 min read</span>
                             </div>
@@ -55,7 +55,7 @@ export default function Blog() {
                         </div>
                         <div className="p-6">
                             <div className="flex items-center text-sm text-gray-500 mb-2">
-                                <span>December 10, 2024</span>
+                                <span>September 10, 2025</span>
                                 <span className="mx-2">•</span>
                                 <span>12 min read</span>
                             </div>
@@ -84,7 +84,7 @@ export default function Blog() {
                         </div>
                         <div className="p-6">
                             <div className="flex items-center text-sm text-gray-500 mb-2">
-                                <span>December 5, 2024</span>
+                                <span>September 5, 2025</span>
                                 <span className="mx-2">•</span>
                                 <span>15 min read</span>
                             </div>
@@ -113,7 +113,7 @@ export default function Blog() {
                         </div>
                         <div className="p-6">
                             <div className="flex items-center text-sm text-gray-500 mb-2">
-                                <span>November 28, 2024</span>
+                                <span>September 28, 2025</span>
                                 <span className="mx-2">•</span>
                                 <span>10 min read</span>
                             </div>
@@ -142,7 +142,7 @@ export default function Blog() {
                         </div>
                         <div className="p-6">
                             <div className="flex items-center text-sm text-gray-500 mb-2">
-                                <span>November 20, 2024</span>
+                                <span>September 20, 2025</span>
                                 <span className="mx-2">•</span>
                                 <span>6 min read</span>
                             </div>
@@ -171,7 +171,7 @@ export default function Blog() {
                         </div>
                         <div className="p-6">
                             <div className="flex items-center text-sm text-gray-500 mb-2">
-                                <span>November 15, 2024</span>
+                                <span>September 15, 2025</span>
                                 <span className="mx-2">•</span>
                                 <span>9 min read</span>
                             </div>

@@ -12,7 +12,7 @@ export default function BlogPost() {
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                         <a href="/blog" className="hover:text-green-600">← Back to Blog</a>
                         <span className="mx-2">•</span>
-                        <span>December 10, 2024</span>
+                        <span>September 10, 2025</span>
                         <span className="mx-2">•</span>
                         <span>12 min read</span>
                     </div>
@@ -36,11 +36,11 @@ export default function BlogPost() {
                 {/* Author */}
                 <div className="flex items-center mb-12 p-6 bg-gray-50 rounded-lg">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-green-600 font-semibold">SM</span>
+                        <span className="text-green-600 font-semibold">DM</span>
                     </div>
                     <div>
-                        <div className="font-semibold text-gray-900">Sarah Martinez</div>
-                        <div className="text-sm text-gray-600">Python Developer at Servelink</div>
+                        <div className="font-semibold text-gray-900">Devawi Mila</div>
+                        <div className="text-sm text-gray-600">Engineer @ Servelink</div>
                     </div>
                 </div>
 
@@ -306,14 +306,14 @@ async def root():
                 <div className="mt-16 pt-8 border-t border-gray-200">
                     <div className="flex items-start">
                         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-6">
-                            <span className="text-green-600 font-semibold text-lg">SM</span>
+                            <span className="text-green-600 font-semibold text-lg">DM</span>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900">Sarah Martinez</h3>
-                            <p className="text-gray-600 mb-2">Python Developer at Servelink</p>
+                            <h3 className="text-lg font-semibold text-gray-900">Devawi Mila</h3>
+                            <p className="text-gray-600 mb-2">Engineer @ Servelink</p>
                             <p className="text-gray-700">
-                                Sarah is a Python expert with over 6 years of experience in web development.
-                                She specializes in Django, Flask, and FastAPI applications and has deployed
+                                Devawi Mila is a Python expert with over 2 years of experience in web development.
+                                He specializes in Django, Flask, and FastAPI applications and has deployed
                                 hundreds of Python applications to production.
                             </p>
                         </div>

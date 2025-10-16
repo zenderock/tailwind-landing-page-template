@@ -12,7 +12,7 @@ export default function BlogPost() {
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                         <a href="/blog" className="hover:text-purple-600">← Back to Blog</a>
                         <span className="mx-2">•</span>
-                        <span>December 15, 2024</span>
+                        <span>September 15, 2025</span>
                         <span className="mx-2">•</span>
                         <span>8 min read</span>
                     </div>
@@ -36,11 +36,11 @@ export default function BlogPost() {
                 {/* Author */}
                 <div className="flex items-center mb-12 p-6 bg-gray-50 rounded-lg">
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-purple-600 font-semibold">JD</span>
+                        <span className="text-purple-600 font-semibold">NG</span>
                     </div>
                     <div>
-                        <div className="font-semibold text-gray-900">John Doe</div>
-                        <div className="text-sm text-gray-600">Senior Developer at Servelink</div>
+                        <div className="font-semibold text-gray-900">NGOU PARE Ibrahim</div>
+                        <div className="text-sm text-gray-600">Engineer @ Servelink</div>
                     </div>
                 </div>
 
@@ -241,13 +241,13 @@ DB_PASSWORD=your-secure-password`}</code>
                 <div className="mt-16 pt-8 border-t border-gray-200">
                     <div className="flex items-start">
                         <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mr-6">
-                            <span className="text-purple-600 font-semibold text-lg">JD</span>
+                            <span className="text-purple-600 font-semibold text-lg">NG</span>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900">John Doe</h3>
-                            <p className="text-gray-600 mb-2">Senior Developer at Servelink</p>
+                            <h3 className="text-lg font-semibold text-gray-900">NGOU PARE Ibrahim</h3>
+                            <p className="text-gray-600 mb-2">Engineer @ Servelink</p>
                             <p className="text-gray-700">
-                                John is a Laravel expert with over 8 years of experience in PHP development.
+                                NGOU PARE Ibrahim is a Laravel expert with over 2 years of experience in PHP development.
                                 He specializes in application architecture and deployment strategies.
                             </p>
                         </div>

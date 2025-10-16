@@ -12,7 +12,7 @@ export default function BlogPost() {
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                         <a href="/blog" className="hover:text-yellow-600">← Back to Blog</a>
                         <span className="mx-2">•</span>
-                        <span>November 20, 2024</span>
+                        <span>September 20, 2025</span>
                         <span className="mx-2">•</span>
                         <span>6 min read</span>
                     </div>
@@ -36,11 +36,11 @@ export default function BlogPost() {
                 {/* Author */}
                 <div className="flex items-center mb-12 p-6 bg-gray-50 rounded-lg">
                     <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-yellow-600 font-semibold">DT</span>
+                        <span className="text-yellow-600 font-semibold">NP</span>
                     </div>
                     <div>
-                        <div className="font-semibold text-gray-900">David Thompson</div>
-                        <div className="text-sm text-gray-600">DevOps Engineer at Servelink</div>
+                        <div className="font-semibold text-gray-900">NGOU PARE Ibrahim</div>
+                        <div className="text-sm text-gray-600">Engineer @ Servelink</div>
                     </div>
                 </div>
 
@@ -472,13 +472,13 @@ CMD ["npm", "start"]`}</code>
                 <div className="mt-16 pt-8 border-t border-gray-200">
                     <div className="flex items-start">
                         <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mr-6">
-                            <span className="text-yellow-600 font-semibold text-lg">DT</span>
+                            <span className="text-yellow-600 font-semibold text-lg">NP</span>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900">David Thompson</h3>
-                            <p className="text-gray-600 mb-2">DevOps Engineer at Servelink</p>
+                            <h3 className="text-lg font-semibold text-gray-900">NGOU PARE Ibrahim</h3>
+                            <p className="text-gray-600 mb-2">Engineer @ Servelink</p>
                             <p className="text-gray-700">
-                                David is a DevOps expert with over 8 years of experience in CI/CD, infrastructure automation,
+                                NGOU PARE Ibrahim is a DevOps expert with over 2 years of experience in CI/CD, infrastructure automation,
                                 and cloud platforms. He specializes in optimizing build pipelines and deployment strategies
                                 for high-performance teams.
                             </p>

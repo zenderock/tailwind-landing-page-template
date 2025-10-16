@@ -12,7 +12,7 @@ export default function BlogPost() {
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                         <a href="/blog" className="hover:text-blue-600">← Back to Blog</a>
                         <span className="mx-2">•</span>
-                        <span>November 28, 2024</span>
+                        <span>September 28, 2025</span>
                         <span className="mx-2">•</span>
                         <span>10 min read</span>
                     </div>
@@ -39,7 +39,7 @@ export default function BlogPost() {
                         <span className="text-blue-600 font-semibold">AL</span>
                     </div>
                     <div>
-                        <div className="font-semibold text-gray-900">Anna Liu</div>
+                        <div className="font-semibold text-gray-900">Atangana Esther</div>
                         <div className="text-sm text-gray-600">Database Engineer at Servelink</div>
                     </div>
                 </div>
@@ -485,13 +485,13 @@ CREATE INDEX idx_posts_content_search ON posts USING gin(to_tsvector('english', 
                 <div className="mt-16 pt-8 border-t border-gray-200">
                     <div className="flex items-start">
                         <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6">
-                            <span className="text-blue-600 font-semibold text-lg">AL</span>
+                            <span className="text-blue-600 font-semibold text-lg">AE</span>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900">Anna Liu</h3>
-                            <p className="text-gray-600 mb-2">Database Engineer at Servelink</p>
+                            <h3 className="text-lg font-semibold text-gray-900">Atangana Esther</h3>
+                            <p className="text-gray-600 mb-2">Engineer @ Servelink</p>
                             <p className="text-gray-700">
-                                Anna is a database expert with over 7 years of experience in PostgreSQL, MySQL,
+                                Atangana Esther is a database expert with over 2 years of experience in PostgreSQL, MySQL,
                                 and Redis. She specializes in database performance optimization and scaling strategies
                                 for high-traffic applications.
                             </p>

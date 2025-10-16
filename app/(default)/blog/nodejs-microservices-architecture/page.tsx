@@ -12,7 +12,7 @@ export default function BlogPost() {
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                         <a href="/blog" className="hover:text-orange-600">← Back to Blog</a>
                         <span className="mx-2">•</span>
-                        <span>December 5, 2024</span>
+                        <span>September 5, 2025</span>
                         <span className="mx-2">•</span>
                         <span>15 min read</span>
                     </div>
@@ -36,11 +36,11 @@ export default function BlogPost() {
                 {/* Author */}
                 <div className="flex items-center mb-12 p-6 bg-gray-50 rounded-lg">
                     <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-orange-600 font-semibold">MR</span>
+                        <span className="text-orange-600 font-semibold">JS</span>
                     </div>
                     <div>
-                        <div className="font-semibold text-gray-900">Mike Rodriguez</div>
-                        <div className="text-sm text-gray-600">Lead Architect at Servelink</div>
+                        <div className="font-semibold text-gray-900">Jules Simi</div>
+                        <div className="text-sm text-gray-600">Engineer @ Servelink</div>
                     </div>
                 </div>
 
@@ -479,13 +479,13 @@ CMD ["npm", "start"]`}</code>
                 <div className="mt-16 pt-8 border-t border-gray-200">
                     <div className="flex items-start">
                         <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mr-6">
-                            <span className="text-orange-600 font-semibold text-lg">MR</span>
+                            <span className="text-orange-600 font-semibold text-lg">JS</span>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900">Mike Rodriguez</h3>
-                            <p className="text-gray-600 mb-2">Lead Architect at Servelink</p>
+                            <h3 className="text-lg font-semibold text-gray-900">Jules Simi</h3>
+                            <p className="text-gray-600 mb-2">Engineer @ Servelink</p>
                             <p className="text-gray-700">
-                                Mike is a software architect with over 10 years of experience in building
+                                Jules Simi is a software engineer with over 2 years of experience in building
                                 distributed systems and microservices. He specializes in Node.js, Docker,
                                 and cloud-native architectures.
                             </p>

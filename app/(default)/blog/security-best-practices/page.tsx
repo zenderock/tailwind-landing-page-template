@@ -12,7 +12,7 @@ export default function BlogPost() {
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                         <a href="/blog" className="hover:text-pink-600">← Back to Blog</a>
                         <span className="mx-2">•</span>
-                        <span>November 15, 2024</span>
+                        <span>September 15, 2025</span>
                         <span className="mx-2">•</span>
                         <span>9 min read</span>
                     </div>
@@ -36,11 +36,11 @@ export default function BlogPost() {
                 {/* Author */}
                 <div className="flex items-center mb-12 p-6 bg-gray-50 rounded-lg">
                     <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4">
-                        <span className="text-pink-600 font-semibold">EK</span>
+                        <span className="text-pink-600 font-semibold">EZ</span>
                     </div>
                     <div>
-                        <div className="font-semibold text-gray-900">Emma Kim</div>
-                        <div className="text-sm text-gray-600">Security Engineer at Servelink</div>
+                        <div className="font-semibold text-gray-900">Emmanuel Zenderock</div>
+                        <div className="text-sm text-gray-600">Engineer @ Servelink</div>
                     </div>
                 </div>
 
@@ -653,14 +653,14 @@ app.use((req, res, next) => {
                 <div className="mt-16 pt-8 border-t border-gray-200">
                     <div className="flex items-start">
                         <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mr-6">
-                            <span className="text-pink-600 font-semibold text-lg">EK</span>
+                            <span className="text-pink-600 font-semibold text-lg">EZ</span>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-900">Emma Kim</h3>
-                            <p className="text-gray-600 mb-2">Security Engineer at Servelink</p>
+                            <h3 className="text-lg font-semibold text-gray-900">Emmanuel Zenderock</h3>
+                            <p className="text-gray-600 mb-2">Engineer @ Servelink</p>
                             <p className="text-gray-700">
-                                Emma is a cybersecurity expert with over 9 years of experience in application security,
-                                penetration testing, and security architecture. She specializes in web application
+                                Emmanuel is a cybersecurity expert with over 2 years of experience in application security,
+                                penetration testing, and security architecture. He specializes in web application
                                 security and cloud security best practices.
                             </p>
                         </div>
