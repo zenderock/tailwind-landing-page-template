@@ -23,7 +23,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="https://app.servel.ink"
+                href="/pricing"
                 className="btn-sm shadow-none text-gray-800  hover:bg-gray-50 hover:text-purple-600"
               >
                 Pricing
