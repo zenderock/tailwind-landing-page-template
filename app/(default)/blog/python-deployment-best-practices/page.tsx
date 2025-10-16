@@ -115,7 +115,7 @@ black==23.11.0`}</code>
                             </div>
                             <div className="ml-3">
                                 <p className="text-sm text-blue-700">
-                                    <strong>Pro Tip:</strong> Use <code>pip freeze > requirements.txt</code> to generate a complete
+                                    <strong>Pro Tip:</strong> Use <code>pip freeze &gt; requirements.txt</code> to generate a complete
                                     list of dependencies, but always review and clean up the file before committing.
                                 </p>
                             </div>
