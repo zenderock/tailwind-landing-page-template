@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Servelink - Push code, deploy apps, scale effortlessly ",
+  description: "Déployez vos projets Laravel, Python, Node.js et autres applications fullstack avec Servelink. La plateforme de déploiement moderne pour développeurs.",
 };
 
 import Hero from "@/components/hero-home";
