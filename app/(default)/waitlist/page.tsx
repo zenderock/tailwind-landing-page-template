@@ -301,7 +301,7 @@ const WaitlistPage: React.FC = () => {
                                         onClick={() => setSubmitted(false)}
                                         whileHover={{ scale: 1.02 }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="px-6 py-3 border-2 border-gray-900 text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition-colors"
+                                        className="w-full rounded-2xl py-4 bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
                                         Ajouter une autre personne
                                     </motion.button>
