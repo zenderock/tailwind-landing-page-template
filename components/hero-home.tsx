@@ -110,7 +110,7 @@ export default function HeroHome() {
                     </span>
                   </a>
                   <a
-                    className="btn ml-4 md:ml-0 group mb-4 w-full  bg-[length:100%_100%] bg-[bottom] text-black bg-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                    className="btn ml-0 md:ml-6  group mb-4 w-full  bg-[length:100%_100%] bg-[bottom] text-black bg-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href="/contact"
                   >
                     <span className="relative inline-flex items-center">
