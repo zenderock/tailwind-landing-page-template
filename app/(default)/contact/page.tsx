@@ -50,38 +50,38 @@ export default function ContactSection() {
                     app_id: ONESIGNAL_APP_ID,
                     target_channel: 'email',
                     email_to: ['zenderock@servel.ink'],
-                    email_subject: `Nouveau contact Servelink - ${formData.name}`,
+                    email_subject: `New Servelink Contact - ${formData.name}`,
                     email_body: `
             <html>
               <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
                 <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
-                  <h1 style="color: #8b5cf6;">Nouveau message de contact</h1>
+                  <h1 style="color: #8b5cf6;">New Contact Message</h1>
                   
                   <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                    <h3 style="margin-top: 0; color: #374151;">Informations du contact</h3>
-                    <p><strong>Nom :</strong> ${formData.name}</p>
-                    <p><strong>Email :</strong> ${formData.email}</p>
-                    <p><strong>Framework :</strong> ${formData.framework || 'Non spécifié'}</p>
-                    <p><strong>Type de déploiement :</strong> ${formData.deployment || 'Non spécifié'}</p>
+                    <h3 style="margin-top: 0; color: #374151;">Contact Information</h3>
+                    <p><strong>Name:</strong> ${formData.name}</p>
+                    <p><strong>Email:</strong> ${formData.email}</p>
+                    <p><strong>Framework:</strong> ${formData.framework || 'Not specified'}</p>
+                    <p><strong>Deployment Type:</strong> ${formData.deployment || 'Not specified'}</p>
                   </div>
 
                   ${formData.project ? `
                   <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                    <h3 style="margin-top: 0; color: #374151;">Description du projet</h3>
+                    <h3 style="margin-top: 0; color: #374151;">Project Description</h3>
                     <p>${formData.project}</p>
                   </div>
                   ` : ''}
 
                   ${formData.message ? `
                   <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                    <h3 style="margin-top: 0; color: #374151;">Besoins additionnels</h3>
+                    <h3 style="margin-top: 0; color: #374151;">Additional Requirements</h3>
                     <p>${formData.message}</p>
                   </div>
                   ` : ''}
 
                   <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
                     <p style="color: #6b7280; font-size: 14px;">
-                      Message reçu le ${new Date().toLocaleString('fr-FR')}
+                      Message received on ${new Date().toLocaleString('en-US')}
                     </p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default function ContactSection() {
             const data = await response.json();
 
             if (!response.ok) {
-                throw new Error(data.errors?.[0] || 'Erreur lors de l\'envoi du message');
+                throw new Error(data.errors?.[0] || 'Error sending message');
             }
         } catch (err) {
             console.error('OneSignal email error:', err);
@@ -109,12 +109,12 @@ export default function ContactSection() {
         setError('');
 
         if (!formData.name.trim()) {
-            setError('Veuillez entrer votre nom');
+            setError('Please enter your name');
             return;
         }
 
         if (!validateEmail(formData.email)) {
-            setError('Veuillez entrer un email valide');
+            setError('Please enter a valid email');
             return;
         }
 
@@ -132,7 +132,7 @@ export default function ContactSection() {
                 message: ''
             });
         } catch (err) {
-            setError('Une erreur est survenue. Veuillez réessayer.');
+            setError('An error occurred. Please try again.');
             console.error('Submission error:', err);
         } finally {
             setLoading(false);
@@ -168,15 +168,15 @@ export default function ContactSection() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <h3 className="text-title text-2xl font-bold mb-3">Message envoyé !</h3>
+                            <h3 className="text-title text-2xl font-bold mb-3">Message sent!</h3>
                             <p className="text-sm text-gray-600 mb-6">
-                                Nous avons bien reçu votre message et vous répondrons dans les plus brefs délais.
+                                We've received your message and will respond as soon as possible.
                             </p>
                             <button
                                 onClick={() => setSubmitted(false)}
                                 className="btn bg-purple-600 text-white hover:bg-purple-700"
                             >
-                                Envoyer un autre message
+                                Send another message
                             </button>
                         </div>
                     ) : (
@@ -328,7 +328,7 @@ export default function ContactSection() {
                                         disabled={loading}
                                         className="btn w-full bg-linear-to-t from-purple-600 to-purple-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
-                                        {loading ? 'Envoi en cours...' : 'Start Deployment'}
+                                        {loading ? 'Sending...' : 'Start Deployment'}
                                     </button>
                                 </div>
                             </div>

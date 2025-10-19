@@ -15,7 +15,7 @@ const WaitlistPage: React.FC = () => {
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState<string>('');
 
-    // Configuration OneSignal - À REMPLACER par vos vraies valeurs
+    // OneSignal Configuration
     const ONESIGNAL_APP_ID = process.env.NEXT_PUBLIC_ONESIGNAL_APP_ID;
     const ONESIGNAL_REST_API_KEY = process.env.NEXT_PUBLIC_ONESIGNAL_API_KEY;
 
@@ -52,7 +52,7 @@ const WaitlistPage: React.FC = () => {
             const data = await response.json();
 
             if (!response.ok) {
-                throw new Error(data.errors?.[0] || 'Erreur lors de l\'enregistrement');
+                throw new Error(data.errors?.[0] || 'Registration error');
             }
 
             return data.identity?.external_id || data.id;
@@ -74,25 +74,25 @@ const WaitlistPage: React.FC = () => {
                     app_id: ONESIGNAL_APP_ID,
                     target_channel: 'email',
                     email_to: [email],
-                    email_subject: '🎉 Bienvenue sur la waitlist Servelink !',
+                    email_subject: '🎉 Welcome to the Servelink Waitlist!',
                     email_body: `
             <html>
               <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
                 <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
-                  <h1 style="color: #8b5cf6;">Bienvenue ${name} !</h1>
-                  <p>Merci de rejoindre la waitlist de <strong>Servelink</strong> 🚀</p>
-                  <p>Nous sommes ravis de vous compter parmi nos futurs utilisateurs. Vous serez parmi les premiers à découvrir notre plateforme de déploiement moderne.</p>
+                  <h1 style="color: #8b5cf6;">Welcome ${name}!</h1>
+                  <p>Thank you for joining the <strong>Servelink</strong> waitlist 🚀</p>
+                  <p>We're thrilled to have you among our future users. You'll be among the first to discover our modern deployment platform.</p>
                   <div style="background: #8b5cf6; padding: 20px; border-radius: 8px; margin: 30px 0;">
-                    <h2 style="color: white; margin-top: 0;">Ce qui vous attend :</h2>
+                    <h2 style="color: white; margin-top: 0;">What awaits you:</h2>
                     <ul style="color: white;">
-                      <li>Déploiement simplifié pour Laravel, Python, Node.js</li>
-                      <li>Interface moderne et intuitive</li>
-                      <li>Support des dernières technologies</li>
-                      <li>Accès anticipé à toutes les fonctionnalités</li>
+                      <li>Simplified deployment for Laravel, Python, Node.js</li>
+                      <li>Modern and intuitive interface</li>
+                      <li>Support for the latest technologies</li>
+                      <li>Early access to all features</li>
                     </ul>
                   </div>
-                  <p>Nous vous tiendrons informé(e) de nos avancées et vous contacterons dès le lancement !</p>
-                  <p style="margin-top: 40px;">À très bientôt,<br><strong>L'équipe Servelink</strong></p>
+                  <p>We'll keep you updated on our progress and contact you as soon as we launch!</p>
+                  <p style="margin-top: 40px;">See you soon,<br><strong>The Servelink Team</strong></p>
                 </div>
               </body>
             </html>
@@ -105,7 +105,7 @@ const WaitlistPage: React.FC = () => {
             const data = await response.json();
 
             if (!response.ok) {
-                throw new Error(data.errors?.[0] || 'Erreur lors de l\'envoi de l\'email');
+                throw new Error(data.errors?.[0] || 'Email sending error');
             }
         } catch (err) {
             console.error('OneSignal email error:', err);
@@ -117,12 +117,12 @@ const WaitlistPage: React.FC = () => {
         setError('');
 
         if (!formData.name.trim()) {
-            setError('Veuillez entrer votre nom');
+            setError('Please enter your name');
             return;
         }
 
         if (!validateEmail(formData.email)) {
-            setError('Veuillez entrer un email valide');
+            setError('Please enter a valid email');
             return;
         }
 
@@ -134,7 +134,7 @@ const WaitlistPage: React.FC = () => {
             setSubmitted(true);
             setFormData({ name: '', email: '' });
         } catch (err) {
-            setError('Une erreur est survenue. Veuillez réessayer.');
+            setError('An error occurred. Please try again.');
             console.error('Submission error:', err);
         } finally {
             setLoading(false);
@@ -165,7 +165,7 @@ const WaitlistPage: React.FC = () => {
                                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
                                 className="w-2 h-2 bg-purple-600 rounded-full"
                             />
-                            <span className="text-sm font-medium text-purple-600">BIENTÔT DISPONIBLE</span>
+                            <span className="text-sm font-medium text-purple-600">COMING SOON</span>
                         </div>
 
 
@@ -189,10 +189,10 @@ const WaitlistPage: React.FC = () => {
                                     {/* Features Grid */}
                                     <div className="grid grid-cols-2 gap-4 mb-8">
                                         {[
-                                            { icon: '⚡', label: 'Déploiement rapide' },
-                                            { icon: '🔧', label: 'Configuration simple' },
+                                            { icon: '⚡', label: 'Fast Deployment' },
+                                            { icon: '🔧', label: 'Simple Configuration' },
                                             { icon: '🚀', label: 'Multi-frameworks' },
-                                            { icon: '💻', label: 'Interface intuitive' }
+                                            { icon: '💻', label: 'Intuitive Interface' }
                                         ].map((feature, i) => (
                                             <motion.div
                                                 key={i}
@@ -211,7 +211,7 @@ const WaitlistPage: React.FC = () => {
                                     <div className="space-y-4">
                                         <div>
                                             <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
-                                                Nom complet
+                                                Full name
                                             </label>
                                             <input
                                                 type="text"
@@ -228,7 +228,7 @@ const WaitlistPage: React.FC = () => {
 
                                         <div>
                                             <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
-                                                Adresse email
+                                                Email address
                                             </label>
                                             <input
                                                 type="email"
@@ -261,11 +261,11 @@ const WaitlistPage: React.FC = () => {
                                             whileTap={{ scale: loading ? 1 : 0.98 }}
                                             className="w-full rounded-2xl py-4 bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                         >
-                                            {loading ? 'Inscription en cours...' : 'Rejoindre la waitlist'}
+                                            {loading ? 'Signing up...' : 'Join the waitlist'}
                                         </motion.button>
 
                                         <p className="text-xs text-gray-500 text-center">
-                                            Vos données sont protégées et ne seront jamais partagées avec des tiers.
+                                            Your data is protected and will never be shared with third parties.
                                         </p>
                                     </div>
                                 </motion.div>
@@ -289,11 +289,11 @@ const WaitlistPage: React.FC = () => {
 
                                     <div>
                                         <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                                            C'est fait !
+                                            All set!
                                         </h2>
                                         <p className="text-gray-600">
-                                            Vous êtes inscrit sur la waitlist.<br />
-                                            Consultez votre email pour confirmer.
+                                            You're on the waitlist.<br />
+                                            Check your email to confirm.
                                         </p>
                                     </div>
 
@@ -303,7 +303,7 @@ const WaitlistPage: React.FC = () => {
                                         whileTap={{ scale: 0.98 }}
                                         className="rounded-2xl px-6 py-4 bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
-                                        Ajouter une autre personne
+                                        Add another person
                                     </motion.button>
                                 </motion.div>
                             )}
@@ -320,7 +320,7 @@ const WaitlistPage: React.FC = () => {
                         <div className="grid grid-cols-3 gap-8 text-center">
                             {[
                                 { value: '6+', label: 'Frameworks' },
-                                { value: '< 2min', label: 'Déploiement' },
+                                { value: '< 2min', label: 'Deployment' },
                                 { value: '99.9%', label: 'Uptime' }
                             ].map((stat, i) => (
                                 <div key={i}>
