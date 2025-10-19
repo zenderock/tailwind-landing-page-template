@@ -31,7 +31,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="https://app.servel.ink"
+                href="/waitlist"
                 className="btn-sm bg-purple-600 font-bold text-white shadow-sm hover:bg-purple-700"
               >
                 Login

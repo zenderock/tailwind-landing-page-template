@@ -100,7 +100,7 @@ export default function HeroHome() {
                 >
                   <a
                     className="btn group mb-4 w-full bg-linear-to-t from-purple-600 to-purple-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="https://app.servel.ink"
+                    href="/waitlist"
                   >
                     <span className="relative inline-flex items-center">
                       Start Free Deployment{" "}
