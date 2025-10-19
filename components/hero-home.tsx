@@ -109,6 +109,14 @@ export default function HeroHome() {
                       </span>
                     </span>
                   </a>
+                  <a
+                    className="btn ml-4 group mb-4 w-full  bg-[length:100%_100%] bg-[bottom] text-black bg-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                    href="/contact"
+                  >
+                    <span className="relative inline-flex items-center">
+                      Contact us
+                    </span>
+                  </a>
 
                 </div>
               </div>
