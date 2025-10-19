@@ -32,20 +32,20 @@ const WaitlistPage: React.FC = () => {
 
     const registerUserInOneSignal = async (email: string): Promise<string> => {
         try {
-            const response = await fetch('https://onesignal.com/api/v1/players', {
+            const response = await fetch(`https://api.onesignal.com/apps/${ONESIGNAL_APP_ID}/users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Basic ${ONESIGNAL_REST_API_KEY}`
+                    'Authorization': `Key ${ONESIGNAL_REST_API_KEY}`
                 },
                 body: JSON.stringify({
-                    app_id: ONESIGNAL_APP_ID,
-                    device_type: 11,
-                    identifier: email,
-                    tags: {
-                        waitlist: 'true',
-                        joined_at: new Date().toISOString()
-                    }
+                    subscriptions: [
+                        {
+                            type: 'Email',
+                            token: email,
+                            enabled: true
+                        }
+                    ]
                 })
             });
 
@@ -55,7 +55,7 @@ const WaitlistPage: React.FC = () => {
                 throw new Error(data.errors?.[0] || 'Erreur lors de l\'enregistrement');
             }
 
-            return data.id;
+            return data.identity?.external_id || data.id;
         } catch (err) {
             console.error('OneSignal registration error:', err);
             throw err;
@@ -64,15 +64,16 @@ const WaitlistPage: React.FC = () => {
 
     const sendWelcomeEmail = async (email: string, name: string): Promise<void> => {
         try {
-            const response = await fetch('https://onesignal.com/api/v1/notifications', {
+            const response = await fetch('https://api.onesignal.com/notifications', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Basic ${ONESIGNAL_REST_API_KEY}`
+                    'Authorization': `Key ${ONESIGNAL_REST_API_KEY}`
                 },
                 body: JSON.stringify({
                     app_id: ONESIGNAL_APP_ID,
-                    include_email_tokens: [email],
+                    target_channel: 'email',
+                    email_to: [email],
                     email_subject: '🎉 Bienvenue sur la waitlist Servelink !',
                     email_body: `
             <html>
