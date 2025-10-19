@@ -2,10 +2,10 @@
 
 export default function Pricing() {
     const payFree = () => {
-        window.location.href = "https://lemonsqueezy.servel.ink/buy/f6a47da3-9ce5-4b1c-a59d-c625d315355a";
+        //  window.location.href = "https://lemonsqueezy.servel.ink/buy/f6a47da3-9ce5-4b1c-a59d-c625d315355a";
     }
     const payPro = () => {
-        window.location.href = "https://lemonsqueezy.servel.ink/buy/15cf523c-bb20-4f24-bc85-5a976a642468";
+        //  window.location.href = "https://lemonsqueezy.servel.ink/buy/15cf523c-bb20-4f24-bc85-5a976a642468";
     }
     return (
         <section className="py-32">
@@ -23,7 +23,7 @@ export default function Pricing() {
                                 <span className="text-title my-3 block text-2xl font-semibold">$0 / mo</span>
                                 <p className="text-sm">Free forever</p>
                             </div>
-                            <button onClick={payFree} className="btn variant-outlined sz-md bg-white rounded-2xl">
+                            <button onClick={payFree} disabled className="btn variant-outlined sz-md bg-white rounded-2xl">
                                 <span className="btn-label"> Get Started</span>
                             </button>
                             <hr className="border-dashed" />
@@ -43,7 +43,7 @@ export default function Pricing() {
                                     <span className="text-title my-3 block text-4xl font-black text-transparent bg-gradient-to-bl from-purple-900 to-purple-300 bg-clip-text">$1 / mo</span>
                                     <p className="text-sm">Pro Plan</p>
                                 </div>
-                                <button onClick={payPro} className="btn variant-primary sz-md bg-purple-500 text-white rounded-2xl">
+                                <button onClick={payPro} disabled className="btn variant-primary sz-md bg-purple-500 text-white rounded-2xl">
                                     <span className="btn-label">Get Started</span>
                                 </button>
                             </div>
