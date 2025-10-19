@@ -16,7 +16,7 @@ export default function Pricing() {
                 </div>
 
                 <div className="mt-20 grid gap-6 md:grid-cols-5 md:gap-0 dark:[--ui-soft-bg:var(--ui-bg)]">
-                    <div className="card flex flex-col justify-between space-y-8 border md:col-span-2 md:my-[--card-radius] md:rounded-r-none md:border-r-0 lg:p-10">
+                    <div className="card p-6 flex flex-col justify-between space-y-8 border md:col-span-2 md:my-[--card-radius] md:rounded-r-none md:border-r-0 lg:p-10">
                         <div className="space-y-4">
                             <div>
                                 <h2 className="text-title font-medium">Hobby Plan</h2>
@@ -35,7 +35,7 @@ export default function Pricing() {
                         </div>
                     </div>
 
-                    <div className="bg-white bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
+                    <div className="bg-white bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 p-6 dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
                         <div className="grid gap-6 sm:grid-cols-2">
                             <div className="space-y-4">
                                 <div>

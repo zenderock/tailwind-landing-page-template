@@ -6,14 +6,14 @@ export default function ContactSection() {
             <div className="mx-auto max-w-4xl px-4 lg:px-0">
                 <h1 className="text-title mb-12 text-center text-3xl font-semibold md:text-4xl lg:text-5xl">Get in touch with our team</h1>
                 <div data-shade="950" className="relative grid divide-y border md:grid-cols-2 md:gap-4 md:divide-x md:divide-y-0">
-                    <div className="flex flex-col justify-between p-[--card-padding] sm:p-12">
+                    <div className="flex flex-col justify-between p-[--card-padding] p-6 sm:p-12">
                         <div>
                             <h3 className="text-title mb-3">General Support</h3>
                             <a href="mailto:support@servel.ink" className="link variant-animated intent-primary my-3 text-2xl">support@servel.ink</a>
                             <p className="mt-3 text-sm">24/7 deployment assistance</p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-between space-y-8 p-[--card-padding] sm:p-12">
+                    <div className="flex flex-col justify-between space-y-8 p-[--card-padding] p-6 sm:p-12">
                         <div>
                             <h3 className="text-title mb-3">Enterprise Sales</h3>
                             <a href="mailto:sales@servel.ink" className="link variant-animated intent-primary my-3 text-2xl">sales@servel.ink</a>
