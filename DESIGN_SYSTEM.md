@@ -54,7 +54,7 @@ Ce document décrit le système de design utilisé pour la plateforme Servelink.
 ```tsx
 <a
   href="/pricing"
-  className="inline-flex items-center justify-center rounded-md bg-gradient-to-t from-purple-600 to-purple-500 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all hover:from-purple-700 hover:to-purple-600 hover:shadow-md"
+  className="btn bg-linear-to-t from-purple-600 to-purple-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]"
 >
   Start Free Trial
 </a>
@@ -64,7 +64,7 @@ Ce document décrit le système de design utilisé pour la plateforme Servelink.
 ```tsx
 <a
   href="/features"
-  className="inline-flex items-center justify-center rounded-md border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-900 shadow-sm transition-colors hover:bg-gray-50"
+  className="btn bg-white text-gray-900 shadow-sm border border-gray-200 hover:bg-gray-50"
 >
   Learn More
 </a>
@@ -72,29 +72,12 @@ Ce document décrit le système de design utilisé pour la plateforme Servelink.
 
 #### Bouton avec icône
 ```tsx
-<a
-  href="/pricing"
-  className="group inline-flex items-center justify-center rounded-md bg-gradient-to-t from-purple-600 to-purple-500 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all hover:from-purple-700 hover:to-purple-600 hover:shadow-md"
->
+<span className="relative inline-flex items-center">
   Start Free Trial{" "}
-  <span className="ml-1 transition-transform group-hover:translate-x-0.5">
-    →
+  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
+    -&gt;
   </span>
-</a>
-```
-
-#### Bouton outline
-```tsx
-<button className="inline-flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-900 shadow-sm transition-colors hover:bg-gray-50">
-  <span>Get Started</span>
-</button>
-```
-
-#### Bouton avec gradient coloré
-```tsx
-<button className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-bl from-purple-900 to-purple-300 bg-clip-text px-6 py-3 text-sm font-medium text-transparent shadow-sm">
-  <span>Get Started</span>
-</button>
+</span>
 ```
 
 ### Badges et étiquettes
@@ -177,7 +160,7 @@ Ce document décrit le système de design utilisé pour la plateforme Servelink.
   </label>
   <input
     id="field-name"
-    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm placeholder-gray-400 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500"
+    className="form-input w-full py-2"
     type="text"
     placeholder="Placeholder"
     required
@@ -196,7 +179,7 @@ Ce document décrit le système de design utilisé pour la plateforme Servelink.
   </label>
   <textarea
     id="message"
-    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm placeholder-gray-400 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500"
+    className="form-input w-full py-2"
     rows={4}
     placeholder="Votre message..."
     required
@@ -215,7 +198,7 @@ Ce document décrit le système de design utilisé pour la plateforme Servelink.
   </label>
   <select
     id="framework"
-    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500"
+    className="form-input w-full py-2"
     required
   >
     <option value="">Sélectionnez un framework</option>
@@ -409,56 +392,6 @@ export default function Page() {
 }
 ```
 
-## Classes personnalisées du projet
-
-### Classes CSS personnalisées utilisées dans le projet
-Le projet utilise certaines classes personnalisées définies dans les fichiers CSS. Voici les principales :
-
-#### Classes de texte
-```css
-.text-title {
-  @apply text-gray-900;
-}
-
-.text-body {
-  @apply text-gray-600;
-}
-```
-
-#### Classes de boutons
-```css
-.btn {
-  @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md transition-colors;
-}
-
-.btn-label {
-  @apply font-medium;
-}
-
-.variant-primary {
-  @apply bg-purple-500 text-white hover:bg-purple-600;
-}
-
-.variant-outlined {
-  @apply border border-gray-200 bg-white text-gray-900 hover:bg-gray-50;
-}
-
-.sz-md {
-  @apply px-6 py-3;
-}
-```
-
-#### Classes de cartes
-```css
-.card {
-  @apply rounded-lg border border-gray-200 bg-white p-6;
-}
-```
-
-### Utilisation recommandée
-
-**Préférer les classes Tailwind pures** pour la cohérence et la maintenabilité, sauf si les classes personnalisées sont déjà définies dans le projet.
-
 ## Règles d'utilisation
 
 ### Espacement
@@ -481,10 +414,5 @@ Le projet utilise certaines classes personnalisées définies dans les fichiers 
 - Toujours prévoir les états hover
 - Utiliser `transition-colors` et `transition-shadow` pour les animations
 - Utiliser `hover:shadow-lg` pour les cartes
-
-### Formulaires
-- Utiliser les classes Tailwind complètes pour les inputs
-- Éviter les classes groupées comme `form-input`
-- Toujours inclure les états focus et hover
 
 Ce système de design assure la cohérence visuelle et fonctionnelle de toute la plateforme Servelink.

@@ -2,10 +2,10 @@
 
 export default function Pricing() {
     const payFree = () => {
-        //  window.location.href = "https://lemonsqueezy.servel.ink/buy/f6a47da3-9ce5-4b1c-a59d-c625d315355a";
+        window.location.href = "https://lemonsqueezy.servel.ink/buy/f6a47da3-9ce5-4b1c-a59d-c625d315355a";
     }
     const payPro = () => {
-        //  window.location.href = "https://lemonsqueezy.servel.ink/buy/15cf523c-bb20-4f24-bc85-5a976a642468";
+        window.location.href = "https://lemonsqueezy.servel.ink/buy/15cf523c-bb20-4f24-bc85-5a976a642468";
     }
     return (
         <section className="py-32">
@@ -16,14 +16,14 @@ export default function Pricing() {
                 </div>
 
                 <div className="mt-20 grid gap-6 md:grid-cols-5 md:gap-0 dark:[--ui-soft-bg:var(--ui-bg)]">
-                    <div className="card p-6 flex flex-col justify-between space-y-8 border md:col-span-2 md:my-[--card-radius] md:rounded-r-none md:border-r-0 lg:p-10">
+                    <div className="card flex flex-col justify-between space-y-8 border md:col-span-2 md:my-[--card-radius] md:rounded-r-none md:border-r-0 lg:p-10">
                         <div className="space-y-4">
                             <div>
                                 <h2 className="text-title font-medium">Hobby Plan</h2>
                                 <span className="text-title my-3 block text-2xl font-semibold">$0 / mo</span>
                                 <p className="text-sm">Free forever</p>
                             </div>
-                            <button onClick={payFree} disabled className="btn variant-outlined sz-md bg-white rounded-2xl">
+                            <button onClick={payFree} className="btn variant-outlined sz-md bg-white rounded-2xl">
                                 <span className="btn-label"> Get Started</span>
                             </button>
                             <hr className="border-dashed" />
@@ -35,7 +35,7 @@ export default function Pricing() {
                         </div>
                     </div>
 
-                    <div className="bg-white bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 p-6 dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
+                    <div className="bg-white bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
                         <div className="grid gap-6 sm:grid-cols-2">
                             <div className="space-y-4">
                                 <div>
@@ -43,7 +43,7 @@ export default function Pricing() {
                                     <span className="text-title my-3 block text-4xl font-black text-transparent bg-gradient-to-bl from-purple-900 to-purple-300 bg-clip-text">$1 / mo</span>
                                     <p className="text-sm">Pro Plan</p>
                                 </div>
-                                <button onClick={payPro} disabled className="btn variant-primary sz-md bg-purple-500 text-white rounded-2xl">
+                                <button onClick={payPro} className="btn variant-primary sz-md bg-purple-500 text-white rounded-2xl">
                                     <span className="btn-label">Get Started</span>
                                 </button>
                             </div>

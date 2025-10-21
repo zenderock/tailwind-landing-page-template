@@ -148,18 +148,18 @@ const WaitlistPage: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white pt-6">
             <div className="px-4 py-16 md:py-24">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-5xl mx-auto">
 
                     {/* Header */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="mb-12 text-center"
+                        className="mb-12"
                     >
-                        <div className="flex items-center justify-center gap-2 mb-8">
+                        <div className="flex items-center gap-2 mb-8">
                             <motion.div
                                 animate={{ rotate: 360 }}
                                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
@@ -168,13 +168,7 @@ const WaitlistPage: React.FC = () => {
                             <span className="text-sm font-medium text-purple-600">COMING SOON</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            The Future of Deployment is Here
-                        </h1>
-                        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                            Join thousands of developers who are already on the waitlist for Servelink -
-                            the modern deployment platform for Laravel, Python, Node.js and more.
-                        </p>
+
                     </motion.div>
 
                     {/* Main Content */}
@@ -190,103 +184,89 @@ const WaitlistPage: React.FC = () => {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     exit={{ opacity: 0 }}
-                                    className="grid lg:grid-cols-2 gap-8 lg:gap-12"
+                                    className="space-y-8 grid grid-cols-1 lg:grid-cols-2 gap-10"
                                 >
                                     {/* Features Grid */}
-                                    <div className="space-y-6">
-                                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                                            What you'll get:
-                                        </h2>
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                            {[
-                                                { icon: '⚡', label: 'Fast Deployment', desc: 'Deploy in under 2 minutes' },
-                                                { icon: '🔧', label: 'Simple Configuration', desc: 'No complex setup required' },
-                                                { icon: '🚀', label: 'Multi-frameworks', desc: 'Laravel, Python, Node.js & more' },
-                                                { icon: '💻', label: 'Intuitive Interface', desc: 'Modern, clean dashboard' }
-                                            ].map((feature, i) => (
-                                                <motion.div
-                                                    key={i}
-                                                    initial={{ opacity: 0, y: 10 }}
-                                                    animate={{ opacity: 1, y: 0 }}
-                                                    transition={{ delay: 0.2 + i * 0.1 }}
-                                                    className="p-6 border border-gray-200 bg-gray-50 rounded-lg hover:shadow-md transition-shadow"
-                                                >
-                                                    <div className="text-3xl mb-3">{feature.icon}</div>
-                                                    <div className="text-lg font-semibold text-gray-900 mb-1">{feature.label}</div>
-                                                    <div className="text-sm text-gray-600">{feature.desc}</div>
-                                                </motion.div>
-                                            ))}
-                                        </div>
+                                    <div className="grid grid-cols-2 gap-4 mb-8">
+                                        {[
+                                            { icon: '⚡', label: 'Fast Deployment' },
+                                            { icon: '🔧', label: 'Simple Configuration' },
+                                            { icon: '🚀', label: 'Multi-frameworks' },
+                                            { icon: '💻', label: 'Intuitive Interface' }
+                                        ].map((feature, i) => (
+                                            <motion.div
+                                                key={i}
+                                                initial={{ opacity: 0, y: 10 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                transition={{ delay: 0.2 + i * 0.1 }}
+                                                className="p-4 border border-gray-200 bg-gray-50"
+                                            >
+                                                <div className="text-2xl mb-2">{feature.icon}</div>
+                                                <div className="text-sm font-medium text-gray-900">{feature.label}</div>
+                                            </motion.div>
+                                        ))}
                                     </div>
 
                                     {/* Form */}
-                                    <div className="space-y-6">
-                                        <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 shadow-sm">
-                                            <h3 className="text-xl font-semibold text-gray-900 mb-6">
-                                                Join the waitlist
-                                            </h3>
-
-                                            <div className="space-y-4">
-                                                <div>
-                                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                                                        Full name
-                                                    </label>
-                                                    <input
-                                                        type="text"
-                                                        id="name"
-                                                        name="name"
-                                                        value={formData.name}
-                                                        onChange={handleInputChange}
-                                                        onKeyPress={handleKeyPress}
-                                                        placeholder="John Doe"
-                                                        className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm placeholder-gray-400 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500"
-                                                        disabled={loading}
-                                                    />
-                                                </div>
-
-                                                <div>
-                                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                                                        Email address
-                                                    </label>
-                                                    <input
-                                                        type="email"
-                                                        id="email"
-                                                        name="email"
-                                                        value={formData.email}
-                                                        onChange={handleInputChange}
-                                                        onKeyPress={handleKeyPress}
-                                                        placeholder="john@example.com"
-                                                        className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm placeholder-gray-400 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500"
-                                                        disabled={loading}
-                                                    />
-                                                </div>
-
-                                                {error && (
-                                                    <motion.div
-                                                        initial={{ opacity: 0, height: 0 }}
-                                                        animate={{ opacity: 1, height: 'auto' }}
-                                                        className="p-4 bg-red-50 border border-red-200 text-red-700 text-sm rounded-md"
-                                                    >
-                                                        {error}
-                                                    </motion.div>
-                                                )}
-
-                                                <motion.button
-                                                    type="button"
-                                                    onClick={handleSubmit}
-                                                    disabled={loading}
-                                                    whileHover={{ scale: loading ? 1 : 1.02 }}
-                                                    whileTap={{ scale: loading ? 1 : 0.98 }}
-                                                    className="w-full rounded-md py-3 bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                                >
-                                                    {loading ? 'Signing up...' : 'Join the waitlist'}
-                                                </motion.button>
-
-                                                <p className="text-xs text-gray-500 text-center">
-                                                    Your data is protected and will never be shared with third parties.
-                                                </p>
-                                            </div>
+                                    <div className="space-y-4">
+                                        <div>
+                                            <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
+                                                Full name
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={handleInputChange}
+                                                onKeyPress={handleKeyPress}
+                                                placeholder="John Doe"
+                                                className="form-input w-full py-2"
+                                                disabled={loading}
+                                            />
                                         </div>
+
+                                        <div>
+                                            <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+                                                Email address
+                                            </label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleInputChange}
+                                                onKeyPress={handleKeyPress}
+                                                placeholder="john@example.com"
+                                                className="form-input w-full py-2"
+                                                disabled={loading}
+                                            />
+                                        </div>
+
+                                        {error && (
+                                            <motion.div
+                                                initial={{ opacity: 0, height: 0 }}
+                                                animate={{ opacity: 1, height: 'auto' }}
+                                                className="p-4 bg-red-50 border-2 border-red-600 text-red-900 text-sm"
+                                            >
+                                                {error}
+                                            </motion.div>
+                                        )}
+
+                                        <motion.button
+                                            type="button"
+                                            onClick={handleSubmit}
+                                            disabled={loading}
+                                            whileHover={{ scale: loading ? 1 : 1.02 }}
+                                            whileTap={{ scale: loading ? 1 : 0.98 }}
+                                            className="w-full rounded-2xl py-3 md:py-4 bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm md:text-base"
+                                        >
+                                            {loading ? 'Signing up...' : 'Join the waitlist'}
+                                        </motion.button>
+
+                                        <p className="text-xs text-gray-500 text-center">
+                                            Your data is protected and will never be shared with third parties.
+                                        </p>
                                     </div>
                                 </motion.div>
                             ) : (
@@ -294,13 +274,13 @@ const WaitlistPage: React.FC = () => {
                                     key="success"
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={{ opacity: 1, scale: 1 }}
-                                    className="text-center py-12 space-y-6 max-w-md mx-auto"
+                                    className="text-center py-12 space-y-6"
                                 >
                                     <motion.div
                                         initial={{ scale: 0 }}
                                         animate={{ scale: 1 }}
                                         transition={{ type: "spring", duration: 0.5 }}
-                                        className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto"
+                                        className="w-16 h-16 bg-green-500 flex items-center justify-center mx-auto"
                                     >
                                         <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -308,7 +288,7 @@ const WaitlistPage: React.FC = () => {
                                     </motion.div>
 
                                     <div>
-                                        <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                                             All set!
                                         </h2>
                                         <p className="text-gray-600">
@@ -321,7 +301,7 @@ const WaitlistPage: React.FC = () => {
                                         onClick={() => setSubmitted(false)}
                                         whileHover={{ scale: 1.02 }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="rounded-md px-6 py-3 bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors"
+                                        className="rounded-2xl px-4 md:px-6 py-3 md:py-4 bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm md:text-base"
                                     >
                                         Add another person
                                     </motion.button>
@@ -343,9 +323,9 @@ const WaitlistPage: React.FC = () => {
                                 { value: '< 2min', label: 'Deployment' },
                                 { value: '99.9%', label: 'Uptime' }
                             ].map((stat, i) => (
-                                <div key={i} className="p-4">
-                                    <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{stat.value}</div>
-                                    <div className="text-sm text-gray-600">{stat.label}</div>
+                                <div key={i}>
+                                    <div className="text-xl md:text-2xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                                    <div className="text-xs text-gray-600">{stat.label}</div>
                                 </div>
                             ))}
                         </div>
