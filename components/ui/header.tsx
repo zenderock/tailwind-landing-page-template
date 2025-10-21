@@ -15,10 +15,11 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="/blog"
+                href="https://changelog.servel.ink"
+                target="_blank"
                 className="btn-sm shadow-none text-gray-800  hover:bg-gray-50 hover:text-purple-600"
               >
-                Blog
+                Changelog
               </Link>
             </li>
             <li>
