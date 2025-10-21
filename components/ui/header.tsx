@@ -35,7 +35,7 @@ export default function Header() {
                 href="/waitlist"
                 className="btn-sm bg-purple-600 font-bold text-white shadow-sm hover:bg-purple-700"
               >
-                Login
+                Join the Waitlist
               </Link>
             </li>
 
