@@ -100,10 +100,21 @@ export default function HeroHome() {
                 >
                   <a
                     className="btn group mb-4 w-full bg-linear-to-t from-purple-600 to-purple-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="https://app.servel.ink"
+                    href="/waitlist"
                   >
                     <span className="relative inline-flex items-center">
                       Start Free Deployment{" "}
+                      <span className="ml-1 tracking-normal text-purple-300 transition-transform group-hover:translate-x-0.5">
+                        -&gt;
+                      </span>
+                    </span>
+                  </a>
+                  <a
+                    className="btn group mr-0 md:mr-6 mb-4 w-full bg-linear-to-t bg-white text-gray-900 shadow-sm hover:bg-gray-50 sm:mb-0 sm:w-auto"
+                    href="/contact"
+                  >
+                    <span className="relative inline-flex items-center">
+                      Contact Us{" "}
                       <span className="ml-1 tracking-normal text-purple-300 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
