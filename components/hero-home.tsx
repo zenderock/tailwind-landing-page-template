@@ -94,7 +94,7 @@ export default function HeroHome() {
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
-                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
+                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center gap-4"
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
@@ -110,7 +110,7 @@ export default function HeroHome() {
                     </span>
                   </a>
                   <a
-                    className="btn group mr-0 md:mr-6 mb-4 w-full bg-linear-to-t bg-white text-gray-900 shadow-sm hover:bg-gray-50 sm:mb-0 sm:w-auto"
+                    className="btn group  mb-4 w-full bg-linear-to-t bg-white text-gray-900 shadow-sm hover:bg-gray-50 sm:mb-0 sm:w-auto"
                     href="/contact"
                   >
                     <span className="relative inline-flex items-center">

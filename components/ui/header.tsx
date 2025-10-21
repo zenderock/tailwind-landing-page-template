@@ -13,7 +13,7 @@ export default function Header() {
 
           {/* Desktop sign in links */}
           <ul className="flex flex-1 items-center justify-end gap-3">
-            <li>
+            <li className="hidden md:inline-block">
               <Link
                 href="https://changelog.servel.ink"
                 target="_blank"
@@ -22,7 +22,7 @@ export default function Header() {
                 Changelog
               </Link>
             </li>
-            <li>
+            <li className="hidden md:inline-block">
               <Link
                 href="/pricing"
                 className="btn-sm shadow-none text-gray-800  hover:bg-gray-50 hover:text-purple-600"
