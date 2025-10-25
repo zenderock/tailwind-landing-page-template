@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+import TestimonialImg from "@/public/images/zenderock.jpg";
 
 export default function LargeTestimonial() {
   return (
@@ -31,15 +31,15 @@ export default function LargeTestimonial() {
             </div>
             <p className="text-2xl font-bold text-gray-900">
               "Servelink has revolutionized our deployment workflow. From
-              Laravel to Python, we deploy{" "}
-              <em className="italic text-gray-500">in minutes</em>
+              Laravel to Python, we deploy {" "}
+              <em className="italic text-gray-500"> in minutes </em>
               what used to take us hours before."
             </p>
             <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Alexandre Dubois</span>{" "}
+              <span className="text-gray-700">Emmanuel Zenderock</span>{" "}
               <span className="text-gray-400">/</span>{" "}
               <a className="text-purple-500" href="#0">
-                Lead Developer at TechCorp
+                Lead Developer at Aubigo Platform
               </a>
             </div>
           </div>
