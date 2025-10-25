@@ -118,7 +118,7 @@ export default function Pricing() {
                                 </tr>
                                 <tr className="border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                                     <td className="p-4 font-medium text-title">Storage</td>
-                                    <td className="p-4 text-center text-body">1 GB</td>
+                                    <td className="p-4 text-center text-body">100 MB</td>
                                     <td className="p-4 text-center text-body">10 GB</td>
                                     <td className="p-4 text-center text-purple-600 dark:text-purple-400 font-medium">+1€ / 10 GB</td>
                                 </tr>
