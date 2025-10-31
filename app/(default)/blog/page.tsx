@@ -18,6 +18,35 @@ export default function Blog() {
 
                 <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <article className="rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                        <div className="h-48 bg-gradient-to-br from-cyan-100 to-blue-100 flex items-center justify-center">
+                            <div className="text-center">
+                                <div className="text-4xl mb-2">⚡</div>
+                                <div className="text-sm font-medium text-cyan-700">Go</div>
+                            </div>
+                        </div>
+                        <div className="p-6">
+                            <div className="flex items-center text-sm text-gray-500 mb-2">
+                                <span>October 1, 2025</span>
+                                <span className="mx-2">•</span>
+                                <span>12 min read</span>
+                            </div>
+                            <h3 className="text-xl font-semibold text-gray-900 hover:text-cyan-600 transition-colors">
+                                Déployer un Backend Go avec Servelink
+                            </h3>
+                            <p className="mt-2 text-gray-600">
+                                Découvrez comment déployer une API REST Go professionnelle avec Gin framework. Guide complet utilisant notre starter CRUD pour des performances optimales.
+                            </p>
+                            <div className="mt-4 flex items-center justify-between">
+                                <div className="flex space-x-2">
+                                    <span className="inline-block rounded-full bg-cyan-100 px-2 py-1 text-xs text-cyan-800">Go</span>
+                                    <span className="inline-block rounded-full bg-blue-100 px-2 py-1 text-xs text-blue-800">Gin</span>
+                                </div>
+                                <a href="/blog/go-backend-deployment" className="text-cyan-600 hover:text-cyan-700 text-sm font-medium">Read more →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article className="rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
                         <div className="h-48 bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center">
                             <div className="text-center">
                                 <div className="text-4xl mb-2">🚀</div>
