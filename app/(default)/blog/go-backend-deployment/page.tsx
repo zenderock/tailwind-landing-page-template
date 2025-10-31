@@ -12,7 +12,7 @@ export default function BlogPost() {
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                         <a href="/blog" className="hover:text-cyan-600">← Back to Blog</a>
                         <span className="mx-2">•</span>
-                        <span>October 1, 2025</span>
+                        <span>October 31, 2025</span>
                         <span className="mx-2">•</span>
                         <span>12 min read</span>
                     </div>
